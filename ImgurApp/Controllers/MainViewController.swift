@@ -9,6 +9,7 @@ class MainViewController: UIViewController {
     var gallary : [Datum] = []
     var loadCount = 100
     var pageLoaded = 1
+    let cellID = "cell"
     private var isLoading = false
     
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
@@ -21,6 +22,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "eWtfMME"))
         
         getGallery(page: pageLoaded)
     }
@@ -48,7 +50,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! CollectionViewCell
         if gallary.isEmpty {
             return cell
         }

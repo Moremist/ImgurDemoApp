@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
         detailTableView.delegate = self
         detailTableView.dataSource = self
         detailTableView.rowHeight = UITableView.automaticDimension
+        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "eWtfMME"))
         
         getComments()
         setImage()
@@ -25,18 +26,18 @@ class DetailViewController: UIViewController {
     
     fileprivate func getComments() {
         if let id = id {
-            api.getCommentsFor(galleryHash: id) { list in
-                self.commentList = list
+            api.getCommentsFor(galleryHash: id) { [weak self] list in
+                self?.commentList = list
                 DispatchQueue.main.async {
-                    self.detailTableView.reloadData()
+                    self?.detailTableView.reloadData()
                 }
             }
         }
     }
     
-    func setImage() {
+    fileprivate func setImage() {
         if let imageURL = imageURL {
-            imageView.kf.setImage(with: URL(string: imageURL))
+            imageView.kf.setImage(with: URL(string: imageURL), placeholder: UIImage(named: "placeholder-image"))
         } else {
             imageView.image = UIImage(named: "placeholder-image")
         }
@@ -53,6 +54,10 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         cell.commentLabel.text = commentList?.data[indexPath.row].comment
         cell.authorLabel.text = commentList?.data[indexPath.row].author
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.detailTableView.deselectRow(at: indexPath, animated: true)
     }
     
     
