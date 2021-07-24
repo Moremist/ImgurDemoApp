@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
         if let imageURL = imageURL {
             imageView.kf.setImage(with: URL(string: imageURL))
         } else {
-            imageView.image = #imageLiteral(resourceName: "placeholder-image")
+            imageView.image = UIImage(named: "placeholder-image")
         }
     }
 }

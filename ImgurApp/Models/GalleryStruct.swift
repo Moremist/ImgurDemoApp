@@ -1,7 +1,7 @@
 import Foundation
 
 struct Gallery: Codable{
-    let data: [Datum]
+    var data: [Datum]
 }
 
 struct Datum: Codable {
@@ -14,4 +14,5 @@ struct Image: Codable {
     let link: String
     let width: Int
     let height: Int
+    let type: String
 }

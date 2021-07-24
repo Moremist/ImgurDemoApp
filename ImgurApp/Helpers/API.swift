@@ -16,9 +16,12 @@ class API {
         let task = URLSession.shared.dataTask(with: urlRequest){data,response,error in
             if let data = data {
                do {
-                let gallery = try JSONDecoder().decode(Gallery.self, from: data)
+                var gallery = try JSONDecoder().decode(Gallery.self, from: data)
+                gallery.data = gallery.data.filter({ data in
+                    return data.images?[0].type == "image/jpeg" || data.images?[0].type == "image/gif"
+                })
                 complition(gallery)
-                
+        
                } catch let error {
                   print(error)
                }
@@ -38,6 +41,7 @@ class API {
                    do {
                         let commentsList = try JSONDecoder().decode(CommentsList.self, from: data)
                         completion(commentsList)
+                    
                    } catch let error {
                       print(error)
                    }
