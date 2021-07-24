@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ImgurApp
-//
-//  Created by Roman Kuzmich on 22.07.2021.
-//
-
 import UIKit
 
 @main
