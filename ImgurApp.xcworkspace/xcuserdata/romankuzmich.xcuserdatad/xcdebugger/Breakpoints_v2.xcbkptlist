@@ -3,4 +3,115 @@
    uuid = "D93C0386-AEDA-414E-8470-8F22D679CC65"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5770CDFE-28B4-4E5C-B9AC-458A2D89A109"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/Helpers/CustomLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "CustomLayout"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5770CDFE-28B4-4E5C-B9AC-458A2D89A109 - d91e53e91f03fde0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurApp.CustomLayout.__allocating_init() -&gt; ImgurApp.CustomLayout"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankuzmich/Library/Mobile%20Documents/com~apple~CloudDocs/SkillBox2/ImgurApp/ImgurApp/Helpers/CustomLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "7">
+               </Location>
+               <Location
+                  uuid = "5770CDFE-28B4-4E5C-B9AC-458A2D89A109 - 91c23d404f0e2a3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurApp.CustomLayout.init() -&gt; ImgurApp.CustomLayout"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankuzmich/Library/Mobile%20Documents/com~apple~CloudDocs/SkillBox2/ImgurApp/ImgurApp/Helpers/CustomLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "5770CDFE-28B4-4E5C-B9AC-458A2D89A109 - ec8748dfe94438a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurApp.CustomLayout.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ImgurApp.CustomLayout&gt;"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankuzmich/Library/Mobile%20Documents/com~apple~CloudDocs/SkillBox2/ImgurApp/ImgurApp/Helpers/CustomLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "5770CDFE-28B4-4E5C-B9AC-458A2D89A109 - 166cf1b5afc0bd7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurApp.CustomLayout.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ImgurApp.CustomLayout&gt;"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankuzmich/Library/Mobile%20Documents/com~apple~CloudDocs/SkillBox2/ImgurApp/ImgurApp/Helpers/CustomLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "5770CDFE-28B4-4E5C-B9AC-458A2D89A109 - 6add425395507779"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurApp.CustomLayout.__deallocating_deinit"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankuzmich/Library/Mobile%20Documents/com~apple~CloudDocs/SkillBox2/ImgurApp/ImgurApp/Helpers/CustomLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA4E1F87-EBF0-4FF6-BD23-77C3E02BDFBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/Helpers/CustomLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "CustomLayoutDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -51,6 +51,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! CustomTableViewCell
+        
+
         cell.commentLabel.text = commentList?.data[indexPath.row].comment
         cell.authorLabel.text = commentList?.data[indexPath.row].author
         return cell
